@@ -1,4 +1,5 @@
 const table = document.getElementsByTagName('table')[0]
+const addRow = document.getElementById('add-row')
 
 function makeRow () {
     const row = document.createElement('tr')
@@ -9,5 +10,4 @@ function makeRow () {
     table.appendChild(row)
 }
 
-makeRow()
-makeRow()
+addRow.addEventListener("click", makeRow)
