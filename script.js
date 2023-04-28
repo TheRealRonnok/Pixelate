@@ -26,7 +26,7 @@ changeColor.addEventListener('change', function(event) {
 // Color a cell
 function colorize (event) {
    const target = event.target
-   if (target.className.length) {
+   if (target.className === chosenColor) {
     target.className = ''
   } else {
     target.className = chosenColor;
